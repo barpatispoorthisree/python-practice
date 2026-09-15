@@ -1,0 +1,26 @@
+numbers = [12,8,12,3,4,5,6,10]
+counts = {}
+for num in numbers:
+   if num in counts :
+         counts[num] += 1 
+   else:
+        counts[num] = 1
+
+ even_numbers = []
+for num in numbers:
+    if num%2==0:
+         even_numbers.append(num)
+
+squares = [num*num for num in even_numbers]
+
+total = 0
+for num in squares:
+      total += num 
+
+average = total/len(squares)
+
+print("count: " , counts)
+print("even_numbers: ", even_numbers)
+print("squares: " , squares)
+print("total: " , total)
+print("average: ", average)
